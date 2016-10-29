@@ -4,6 +4,6 @@ export default class {
   }
 
   bark() {
-    return `Wah wah, I am ${this.name}`
+    return `Wah wah, I am ${this.name}`;
   }
 }

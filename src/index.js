@@ -1,5 +1,7 @@
-import Dog from './dog'
+/* eslint-disable no-console */
 
-const toby = new Dog('Professor Pickles');
+import Dog from './dog';
+
+const toby = new Dog('Professor DogMcDogFace Hi!!!!');
 
 console.log(toby.bark());
