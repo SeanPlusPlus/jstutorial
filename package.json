@@ -1,0 +1,13 @@
+{
+  "name": "jstutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "stoked",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "color": "^0.11.3"
+  }
+}
