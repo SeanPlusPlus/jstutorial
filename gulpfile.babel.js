@@ -6,6 +6,7 @@ import eslint from 'gulp-eslint';
 import mocha from 'gulp-mocha';
 import del from 'del';
 import webpack from 'webpack-stream';
+import flow from 'gulp-flowtype';
 import webpackConfig from './webpack.config.babel';
 
 const paths = {
@@ -30,6 +31,7 @@ gulp.task('lint', () =>
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError())
+    .pipe(flow({ abort: true })) // Add Flow here
 );
 
 gulp.task('clean', () => del([
